@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Job - Home</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div>
+                    <a href="#" class="text-xl font-bold text-gray-800">Logo</a>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">About Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">All Jobs</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Blogs</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- You can open the modal using ID.showModal() method -->
+                    <button class="btn" onclick="my_modal_3.showModal()">Check Status</button>
+                    <dialog id="my_modal_3" class="modal">
+                    <div class="modal-box">
+                        <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        
+                        </form>
+                        <form action="">
+                            <div class="input my-10">
+                                <label for="">Input Your Application ID</label> <br>
+                                <input type="text" placeholder="Ex: 0145511">
+                            </div>
+                                <div class="card-actions justify-end">
+                                <button class="btn btn-primary my-5">Submit</button>
+                                </div>
+                        </form>
+                    </div>
+                    </dialog>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="py-20 text-white flex">
+        <div class="max-w-7xl px-4 flex-1">
+            <h1 class="text-4xl font-bold text-lime-600 lg:mt-24">Welcome to All Jobs</h1>
+            <p class="mt-4 text-lg text-black">Find your dream job here!</p>
+        </div>
+        <div class="banner-image flex-1">
+            <img src="img/b.webp" alt="">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">About Us</h2>
+            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus justo
+                sed est bibendum, id tempus tortor hendrerit. Curabitur commodo, nisi sit amet bibendum gravida,
+                lectus leo aliquam sem, at gravida leo justo et metus.</p>
+        </div>
+    </section>
+
+    <!-- Job Section -->
+    <section class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Latest Jobs</h2>
+            <!-- Job listings will go here -->
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Blogs</h2>
+            <!-- Blog posts will go here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+            <!-- Contact form or information will go here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <p>&copy; 2024 Job Portal. All rights reserved.</p>
+            <ul class="flex space-x-8">
+                <li><a href="#" class="hover:text-gray-300">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-gray-300">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
