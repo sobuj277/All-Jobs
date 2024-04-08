@@ -803,16 +803,64 @@
                                             <div class="badge badge-accent badge-outline">Full Time</div>
                                         </div>
                                   <div class="card-actions justify-end">
-                                    <button class="badge badge-neutral" onclick="my_modal.showModal()">View Details</button>
-                                    <dialog id="my_modal" class="modal">
-                                        <div class="modal-box bg-white">
-                                            <form method="dialog">
-                                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                                            
-                                            </form>
-                                            <p>The Bangladesh Air Force (BAF) (Bengali: বাংলাদেশ বিমান বাহিনী, romanized: Bangladesh Biman Bahini)</p>
+                                    <button class="badge badge-neutral" onclick="my_modal_done.showModal()">View Details</button>
+                                      <dialog id="my_modal_done" class="modal">
+                                        <div class="modal-box w-11/12 max-w-5xl">
+                                          <div class="overflow-x-auto">
+                                          <table class="table-auto w-full border-collapse border border-gray-200">
+                                            <thead>
+                                                <tr class="bg-gray-200">
+                                                    <th class="border border-gray-200 px-4 py-2 text-lime-500">ক্রমিক</th>
+                                                    <th class="border border-gray-200 px-4 py-2 text-lime-500">পদের নাম</th>
+                                                    <th class="border border-gray-200 px-4 py-2 text-lime-500">গ্রেড</th>
+                                                    <th class="border border-gray-200 px-4 py-2 text-lime-500">বেতন</th>
+                                                    <th class="border border-gray-200 px-4 py-2 text-lime-500">পদ সংখ্যা</th>
+                                                    <th class="border border-gray-200 px-4 py-2 text-lime-500">শিক্ষাগত যোগ্যতা</th>
+                                                    <th class="border border-gray-200 px-4 py-2 text-lime-500">যে জেলা আবেদন <br> করতে পারবে না</th>
+                                                    <th class="border border-gray-200 px-4 py-2 text-lime-500">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="border border-gray-200 px-4 py-2 text-center text-black">1</td>
+                                                    <td class="border border-gray-200 px-4 py-2 text-center text-black">ওয়েব ডেডলপমেন্ট</td>
+                                                    <td class="border border-gray-200 px-4 py-2 text-center text-black">16</td>
+                                                    <td class="border border-gray-200 px-4 py-2 text-center text-black">9500-22500</td>
+                                                    <td class="border border-gray-200 px-4 py-2 text-center text-black">250</td>
+                                                    <td class="border border-gray-200 px-4 py-2 text-center text-black">বাংলার জন্য কি আছে? সেই ধারনা থেকেই বাংলা ডেমো টেক্সট তৈরীর চেষ্টা। HTML এর প্রয়োজনীয় প্রায় সব ফরম্যাটেই বাংলা ডেমো টেক্সট তুলে ধরা হয়েছে। আশা করছি, এরি ক্ষুদ্র প্রচেষ্টা আপনাদের কাজে আসবে।</td>
+                                                    <td class="border border-gray-200 px-4 py-2 text-center text-black">Sirajganj</td>
+                                                    <td class="border border-gray-200 px-4 py-2 text-center">
+                                                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Apply</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">2</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">ওয়েব ডেডলপমেন্ট</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">16</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">9500-22500</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">250</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">বাংলার জন্য কি আছে? সেই ধারনা থেকেই বাংলা ডেমো টেক্সট তৈরীর চেষ্টা।</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">Sirajganj</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center">
+                                                      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Apply</button>
+                                                  </td>
+                                              </tr>
+                                                <!-- Add more rows here if needed -->
+                                            </tbody>
+                                        </table>
+                                      </div>
+                                        <div class="pt-10">
+                                          <a href="http://dlrs.teletalk.com.bd/dlrs_sv2/docs/circular.pdf">
+                                            <button class="btn btn-accent">See Orginal Circuler</button>
+                                          </a>
                                         </div>
-                                        </dialog>
+                                          <div class="modal-action">
+                                            <form method="dialog">
+                                              <button class="btn btn-error">Close</button>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </dialog>
                                     <button class="badge badge-success">Apply</button>
                                   </div>
                                 </div>
@@ -883,14 +931,62 @@
                                   <div class="card-actions justify-end">
                                     <button class="badge badge-neutral" onclick="my_modal3.showModal()">View Details</button>
                                     <dialog id="my_modal3" class="modal">
-                                        <div class="modal-box bg-white">
-                                            <form method="dialog">
-                                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                                            
-                                            </form>
-                                            <p>The Bangladesh Air Force (BAF) (Bengali: বাংলাদেশ বিমান বাহিনী, romanized: Bangladesh Biman Bahini)</p>
+                                      <div class="modal-box w-11/12 max-w-5xl">
+                                        <div class="overflow-x-auto">
+                                        <table class="table-auto w-full border-collapse border border-gray-200">
+                                          <thead>
+                                              <tr class="bg-gray-200">
+                                                  <th class="border border-gray-200 px-4 py-2 text-lime-500">ক্রমিক</th>
+                                                  <th class="border border-gray-200 px-4 py-2 text-lime-500">পদের নাম</th>
+                                                  <th class="border border-gray-200 px-4 py-2 text-lime-500">গ্রেড</th>
+                                                  <th class="border border-gray-200 px-4 py-2 text-lime-500">বেতন</th>
+                                                  <th class="border border-gray-200 px-4 py-2 text-lime-500">পদ সংখ্যা</th>
+                                                  <th class="border border-gray-200 px-4 py-2 text-lime-500">শিক্ষাগত যোগ্যতা</th>
+                                                  <th class="border border-gray-200 px-4 py-2 text-lime-500">যে জেলা আবেদন <br> করতে পারবে না</th>
+                                                  <th class="border border-gray-200 px-4 py-2 text-lime-500">Action</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">1</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">ওয়েব ডেডলপমেন্ট</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">16</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">9500-22500</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">250</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">বাংলার জন্য কি আছে? সেই ধারনা থেকেই বাংলা ডেমো টেক্সট তৈরীর চেষ্টা। HTML এর প্রয়োজনীয় প্রায় সব ফরম্যাটেই বাংলা ডেমো টেক্সট তুলে ধরা হয়েছে। আশা করছি, এরি ক্ষুদ্র প্রচেষ্টা আপনাদের কাজে আসবে।</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center text-black">Sirajganj</td>
+                                                  <td class="border border-gray-200 px-4 py-2 text-center">
+                                                      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Apply</button>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="border border-gray-200 px-4 py-2 text-center text-black">2</td>
+                                                <td class="border border-gray-200 px-4 py-2 text-center text-black">ওয়েব ডেডলপমেন্ট</td>
+                                                <td class="border border-gray-200 px-4 py-2 text-center text-black">16</td>
+                                                <td class="border border-gray-200 px-4 py-2 text-center text-black">9500-22500</td>
+                                                <td class="border border-gray-200 px-4 py-2 text-center text-black">250</td>
+                                                <td class="border border-gray-200 px-4 py-2 text-center text-black">বাংলার জন্য কি আছে? সেই ধারনা থেকেই বাংলা ডেমো টেক্সট তৈরীর চেষ্টা।</td>
+                                                <td class="border border-gray-200 px-4 py-2 text-center text-black">Sirajganj</td>
+                                                <td class="border border-gray-200 px-4 py-2 text-center">
+                                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Apply</button>
+                                                </td>
+                                            </tr>
+                                              <!-- Add more rows here if needed -->
+                                          </tbody>
+                                      </table>
+                                    </div>
+                                      <div class="pt-10">
+                                        <a href="http://dlrs.teletalk.com.bd/dlrs_sv2/docs/circular.pdf">
+                                          <button class="btn btn-accent">See Orginal Circuler</button>
+                                        </a>
+                                      </div>
+                                        <div class="modal-action">
+                                          <form method="dialog">
+                                            <button class="btn btn-error">Close</button>
+                                          </form>
                                         </div>
-                                        </dialog>
+                                      </div>
+                                    </dialog>
                                     <button class="badge badge-success">Apply</button>
                                   </div>
                                 </div>
@@ -915,14 +1011,62 @@
                               <div class="card-actions justify-end">
                                 <button class="badge badge-neutral" onclick="my_modal4.showModal()">View Details</button>
                                 <dialog id="my_modal4" class="modal">
-                                    <div class="modal-box bg-white">
-                                        <form method="dialog">
-                                        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                                        
-                                        </form>
-                                        <p>The Bangladesh Air Force (BAF) (Bengali: বাংলাদেশ বিমান বাহিনী, romanized: Bangladesh Biman Bahini)</p>
+                                  <div class="modal-box w-11/12 max-w-5xl">
+                                    <div class="overflow-x-auto">
+                                    <table class="table-auto w-full border-collapse border border-gray-200">
+                                      <thead>
+                                          <tr class="bg-gray-200">
+                                              <th class="border border-gray-200 px-4 py-2 text-lime-500">ক্রমিক</th>
+                                              <th class="border border-gray-200 px-4 py-2 text-lime-500">পদের নাম</th>
+                                              <th class="border border-gray-200 px-4 py-2 text-lime-500">গ্রেড</th>
+                                              <th class="border border-gray-200 px-4 py-2 text-lime-500">বেতন</th>
+                                              <th class="border border-gray-200 px-4 py-2 text-lime-500">পদ সংখ্যা</th>
+                                              <th class="border border-gray-200 px-4 py-2 text-lime-500">শিক্ষাগত যোগ্যতা</th>
+                                              <th class="border border-gray-200 px-4 py-2 text-lime-500">যে জেলা আবেদন <br> করতে পারবে না</th>
+                                              <th class="border border-gray-200 px-4 py-2 text-lime-500">Action</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td class="border border-gray-200 px-4 py-2 text-center text-black">1</td>
+                                              <td class="border border-gray-200 px-4 py-2 text-center text-black">ওয়েব ডেডলপমেন্ট</td>
+                                              <td class="border border-gray-200 px-4 py-2 text-center text-black">16</td>
+                                              <td class="border border-gray-200 px-4 py-2 text-center text-black">9500-22500</td>
+                                              <td class="border border-gray-200 px-4 py-2 text-center text-black">250</td>
+                                              <td class="border border-gray-200 px-4 py-2 text-center text-black">বাংলার জন্য কি আছে? সেই ধারনা থেকেই বাংলা ডেমো টেক্সট তৈরীর চেষ্টা। HTML এর প্রয়োজনীয় প্রায় সব ফরম্যাটেই বাংলা ডেমো টেক্সট তুলে ধরা হয়েছে। আশা করছি, এরি ক্ষুদ্র প্রচেষ্টা আপনাদের কাজে আসবে।</td>
+                                              <td class="border border-gray-200 px-4 py-2 text-center text-black">Sirajganj</td>
+                                              <td class="border border-gray-200 px-4 py-2 text-center">
+                                                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Apply</button>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="border border-gray-200 px-4 py-2 text-center text-black">2</td>
+                                            <td class="border border-gray-200 px-4 py-2 text-center text-black">ওয়েব ডেডলপমেন্ট</td>
+                                            <td class="border border-gray-200 px-4 py-2 text-center text-black">16</td>
+                                            <td class="border border-gray-200 px-4 py-2 text-center text-black">9500-22500</td>
+                                            <td class="border border-gray-200 px-4 py-2 text-center text-black">250</td>
+                                            <td class="border border-gray-200 px-4 py-2 text-center text-black">বাংলার জন্য কি আছে? সেই ধারনা থেকেই বাংলা ডেমো টেক্সট তৈরীর চেষ্টা।</td>
+                                            <td class="border border-gray-200 px-4 py-2 text-center text-black">Sirajganj</td>
+                                            <td class="border border-gray-200 px-4 py-2 text-center">
+                                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Apply</button>
+                                            </td>
+                                        </tr>
+                                          <!-- Add more rows here if needed -->
+                                      </tbody>
+                                  </table>
+                                </div>
+                                  <div class="pt-10">
+                                    <a href="http://dlrs.teletalk.com.bd/dlrs_sv2/docs/circular.pdf">
+                                      <button class="btn btn-accent">See Orginal Circuler</button>
+                                    </a>
+                                  </div>
+                                    <div class="modal-action">
+                                      <form method="dialog">
+                                        <button class="btn btn-error">Close</button>
+                                      </form>
                                     </div>
-                                    </dialog>
+                                  </div>
+                                </dialog>
                                 <button class="badge badge-success">Apply</button>
                               </div>
                             </div>
